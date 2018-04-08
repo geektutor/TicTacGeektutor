@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TicTacGeektutor</string>
+<string name="game_name">Tic Tac Toe Game</string>
+    <string name="play_button_text">Play</string>
+    <string name="ask_player1name_text">Enter the name of Player 1:</string>
+    <string name="player1name_text_hint">Player 1</string>
+    <string name="ask_player2name_text">Enter the name of Player 2:</string>
+    <string name="player2name_text_hint">Player 2</string>
+    <string name="ask_numofgames_text">Enter the number of games:</string>
+    <string name="number_of_games_hint">Number of games</string>
+    <string name="playernames_submit_button">Done</string>
+    <string name="default_player_turn_text">Player 1\'s turn (X)</string>
+    <string name="restart_game_button_text">Restart Game</string>
+    <string name="restart_match_button_text">Restart Match</string>
+    <string name="blank_string" />
+    <string name="player_2_default_name">Player 2</string>
+    <string name="player_1_default_name">Player 1</string>
+    <string name="initial_games_played_0">0</string>
+    <string name="bar_demarcate_scores">|</string>
+    <string name="continue_button_text">Continue</string>
+    <string name="result_text">Result</string>
+    <string name="default_max_games">999</string>
+    <string name="default_min_games">1</string>
+    <string name="x_turn">\'s turn (X)</string>
+    <string name="o_turn">\'s turn (O)</string>
+    <string name="tictacgeek">TicTacGeek</string>
+</resources>

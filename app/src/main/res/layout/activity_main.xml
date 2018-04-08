@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10px"
+    android:paddingLeft="10px"
+    android:paddingRight="10px"
+    android:paddingTop="10px"
+    android:background="#009688"
+    tools:context="online.erupt.tictacgeektutor.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tictacgeek"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:textSize="56sp"
+        android:textColor="#003c36"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="24dp"
+        />
+    <Button
+        android:id="@+id/twoplayer"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Two player"
+        android:textSize="40sp"
+        android:onClick="playTwoPGame"
+        android:background="#99d5cf"
+        android:textColor="#003300"
+        android:padding="10dp"/>
+    <Button
+        android:id="@+id/singleplayer"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Single Player"
+        android:textSize="40sp"
+        android:onClick="playSinglePGame"
+        android:background="#99d5cf"
+        android:textColor="#003300"
+        android:padding="10dp"/>
+
+
+</LinearLayout>

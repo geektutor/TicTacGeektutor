@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#009688"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#cdeeee">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:id="@+id/p1name"
+                    android:text="@string/player_2_default_name"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:text="0"
+                    android:id="@+id/p1wins"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="32sp"
+                    android:id="@+id/p2name"
+                    android:text="@string/player_2_default_name"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="32sp"
+                    android:text="0"
+                    android:id="@+id/p2wins"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:padding="16px"
+            android:text="@string/default_player_turn_text"
+            android:textSize="22sp"
+            android:textColor="#000000"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="24dp"
+            />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:paddingLeft="4.0dip"
+            android:paddingRight="4.0dip"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            >
+            <Button
+                android:id="@+id/res"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restart_game_button_text"
+                android:onClick="newGame"
+                android:layout_alignParentLeft="true"
+                android:background="#9a2617"
+                android:textColor="#330033"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp"
+                android:layout_toLeftOf="@id/cp"
+                />
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cp"/>
+            <Button
+                android:id="@+id/restartmatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restart_match_button_text"
+                android:onClick="newMatch"
+                android:background="#9a2617"
+                android:layout_toRightOf="@id/cp"
+                android:layout_alignParentRight="true"
+                android:textColor="#330033"
+                android:layout_marginLeft="24dp"
+                android:layout_marginBottom="16dp"
+                android:padding="4dp"
+                />
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/grid"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:layout_gravity="center"
+            >
+
+            <Button
+                android:id="@+id/a11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                />
+            <Button
+                android:id="@+id/a12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/a13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/a21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/a22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/a23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+
+
+            <Button
+                android:id="@+id/a31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:textAlignment="center"
+                android:onClick="playmove"
+                android:textSize="70sp"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"
+                />
+
+
+            <Button
+                android:id="@+id/a32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:textSize="70sp"
+                android:textAlignment="center"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/a33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+
+                android:textAlignment="center"
+                android:textSize="70sp"
+                android:onClick="playmove"
+                android:background="#99d5cf"
+                android:layout_margin="4dp"
+                android:textColor="#ffffff"/>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>

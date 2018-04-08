@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#009688"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="#009688"
+        tools:context="online.erupt.tictactoegeek2.MainActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:id="@+id/geek1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/ask_player1name_text"
+            android:textColor="#53ff1a"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/player1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/player1name_text_hint"
+            android:textColor="#00ffff"
+            android:textColorHint="#006666"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="#53ff1a"
+            android:text="@string/ask_player2name_text"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/player2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/player2name_text_hint"
+            android:textColor="#00ffff"
+            android:textColorHint="#006666"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/ask_numofgames_text"
+            android:textColor="#53ff1a"
+            android:textSize="20sp"
+            />
+        <EditText
+            android:id="@+id/numberOfG"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/number_of_games_hint"
+            android:inputType="number"
+            android:textColor="#00ffff"
+            android:textColorHint="#006666"
+            android:backgroundTint="#006666"
+            android:layout_marginBottom="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:id="@+id/letter_selection_layout">
+
+            <TextView
+                android:id="@+id/letter_selection_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Letter"
+                android:textSize="24sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/letter_selection_radiogroup">
+
+                <RadioButton
+                    android:id="@+id/play_as_X"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="X"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/play_as_O"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="O"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="@string/playernames_submit_button"
+            android:background="#9a2617"
+            android:textColor="#000066"
+            android:textSize="16sp"
+            android:onClick="submitName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            />
+
+    </LinearLayout>
+</ScrollView>

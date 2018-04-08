@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#009688"
+    tools:context="online.erupt.tictacgeektutor.MainActivityG">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game Type"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/single_player"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Single Player Vs Computer"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/two_players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Two Players"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:id="@+id/letter_selection_layout">
+
+    <TextView
+        android:id="@+id/letter_selection_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Letter"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/letter_selection_radiogroup">
+
+        <RadioButton
+            android:id="@+id/play_as_X"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="X"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/play_as_O"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="O"
+            android:textSize="24sp" />
+
+    </RadioGroup>
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Board Size"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioButton
+            android:id="@+id/three_by_three_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="3 by 3"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/four_by_four_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4 by 4"
+            android:textSize="24sp" />
+
+        <RadioButton
+            android:id="@+id/five_by_five_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5 by 5"
+            android:textSize="24sp" />
+    </RadioGroup>
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="playGame"
+        android:text="Play Game"
+        android:textSize="32sp" />
+
+</RelativeLayout>
+
+</LinearLayout>
+
